@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to student management system</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Date of birth</th>
+                <th>Email Id</th>
+            </tr>
+        </thead>
+        <tbody>
+            {%for student in nm%}
+            <tr>
+                <td>{{student[0]}}</td>
+                <td>{{student[1]}}</td>
+                <td>{{student[2]}}</td>
+                <td>{{student[3]}}</td>    
+            </tr>
+            {%endfor%}
+        </tbody>
+    </table>
+</body>
+</html>
